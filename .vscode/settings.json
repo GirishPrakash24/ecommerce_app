@@ -1,0 +1,11 @@
+{
+    "terminal.integrated.shell.windows": "C:\\windows\\System32\\cmd.exe",
+    "editor.minimap.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.zoomLevel": 0,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": true,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true
+}
