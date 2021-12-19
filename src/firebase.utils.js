@@ -1,14 +1,15 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/firestore';
-import 'firebase/compat/auth';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
 
 const config = {
-  apiKey: "AIzaSyC1-eC1PDFZxv6Ah3vuA2uLBV1frKkh3yI",
-  authDomain: "ecommerceapp-10062.firebaseapp.com",
-  projectId: "ecommerceapp-10062",
-  storageBucket: "ecommerceapp-10062.appspot.com",
-  messagingSenderId: "88112254262",
-  appId: "1:88112254262:web:2a3c4e0fdbb331b433b797"
+  apiKey: 'AIzaSyCdHT-AYHXjF7wOrfAchX4PIm3cSj5tn14',
+  authDomain: 'crwn-db.firebaseapp.com',
+  databaseURL: 'https://crwn-db.firebaseio.com',
+  projectId: 'crwn-db',
+  storageBucket: 'crwn-db.appspot.com',
+  messagingSenderId: '850995411664',
+  appId: '1:850995411664:web:7ddc01d597846f65'
 };
 
 firebase.initializeApp(config);
@@ -44,7 +45,6 @@ export const addCollectionAndDocuments = async (
 ) => {
   const collectionRef = firestore.collection(collectionKey);
 
-
   const batch = firestore.batch();
   objectsToAdd.forEach(obj => {
     const newDocRef = collectionRef.doc();
@@ -71,8 +71,6 @@ export const convertCollectionsSnapshotToMap = collections => {
     return accumulator;
   }, {});
 };
-
-
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
